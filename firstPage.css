@@ -565,6 +565,46 @@ input[type=submit]:hover {
       /* margin-right: 25%; */
       filter: brightness(100%);
     }
+    .text2{
+      width: 100%;
+    }
+
+    .text3{
+      width: 100%;
+    }
+
+    .t1{
+      width: 100%;
+    }
+    .t2{
+      width: 100%;
+
+    }
+  .skillHead{
+    width: 100%;
+
+  }
+  .internship_items{
+    width: 100%;
+
+  }
+  .wrapper{
+    width: 100%;
+
+  }
+  .hobby_items{
+    width: 100%;
+
+  }
+  .column{
+    width: 100%;
+
+  }
+  h3{
+    width: 100%;
+
+  }
+
 
     .login{
       height: 70px;
@@ -596,6 +636,7 @@ input[type=submit]:hover {
       color: #fff;
       text-align: left;
       margin-top: 50px;
+      width: 100%;
     }
     .fa {
       font-size: 500px;
@@ -644,6 +685,7 @@ input[type=submit]:hover {
 
   .contactMe{
     margin-bottom: 0%;
+    width: 100%;
   }
   .cards{
     grid-area: cards;
@@ -653,7 +695,7 @@ input[type=submit]:hover {
     margin: 0%;
   }
   .card{
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 8px;
   }

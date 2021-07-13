@@ -613,15 +613,15 @@ input[type=submit]:hover {
     }
 
     .image{
-      height: 100px;
-      width: 100px;
+      height: 500px;
+      width: 500px;
       color: white;
       grid-area: image;
       padding: 20px;
     }
     .image img{
-      height: 100px;
-      width: 100px;
+      height: 500px;
+      width: 500px;
       border-radius: 50%;
       box-shadow: 2px 2px 20px black;
       filter: brightness(100%);

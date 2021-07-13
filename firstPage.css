@@ -1,0 +1,617 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  /* background-color: black; */
+  background-image: url("My.png");
+  background-size:cover;
+  display: grid;
+  grid-template-rows: 5% 90% 5%;
+  grid-template-columns: 1fr;
+  /* grid-gap: 2px; */
+  grid-template-areas:
+  "navbar"
+  "mainContent"
+  "footer";
+}
+.Navbar{
+  /* background-color: violet; */
+  grid-area: navbar;
+  color: #fff;
+  font-size: 18px;
+  font-family: cursive;
+  text-align: center;
+}
+.mainContent{
+  grid-area: mainContent;
+  scroll-behavior: smooth;
+  display: grid;
+  color: white;
+  grid-template-rows:  1fr;
+  grid-template-columns:10% 80% 10%;
+  grid-template-areas:
+  "animation content animation1";
+}
+
+
+.footer{
+  /* background-color: pink; */
+  color: white;
+  grid-area: footer;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+
+}
+.skills{
+  /* background-color: pink; */
+  grid-area: skills;
+
+}
+
+.projects{
+  grid-area: projects;
+  padding: 20px;
+}
+
+.hobbies{
+  grid-area: hobby;
+  padding: 20px;
+}
+
+.tech_skills{
+  grid-area: tech_skills;
+}
+.contactMe{
+  grid-area:contact_me;
+}
+
+.internships{
+  grid-area: internship;
+}
+.content{
+  color: white;
+  grid-area: content;
+  padding: 20px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 8px 5px 35px #111;
+  /* background-color: grey; */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  display: grid;
+  align-items: center;
+  grid-gap: 2%;
+  grid-template-rows:  1fr;
+  grid-template-columns:  30% 70%;
+  grid-template-areas:
+  "image text"
+  "internship internship"
+  "skills skills"
+  "tech_skills tech_skills"
+  "projects projects"
+  "hobby hobby"
+  "contact_me contact_me";
+}
+
+.internship_items{
+  display: block;
+  line-height: 300%;
+}
+
+.scroll-container {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 0px;
+}
+/* Track */
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #d6d0d0;
+}
+/* Handle on hover */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 139, 139);
+}
+.animation{
+  color: white;
+  grid-area: animation;
+  /* background-color: green; */
+}
+.animation1{
+  color: white;
+  grid-area: animation1;
+  /* background-color: brown; */
+}
+.text{
+  /* background-color: brown; */
+  padding: 15px;
+  color: white;
+  grid-area: text;
+  margin-left: 5%;
+}
+
+.text1{
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.text2{
+  font-size: 75px;
+  color: #ff006e;
+}
+.skillHead{
+  margin: 5%;
+  font-size: 22px;
+  letter-spacing: 4px;
+  color: white;
+  text-align: center;
+}
+.text5{
+  font-size: 45px;
+  color: #fff;
+}
+.text3{
+  margin-top: 15px;
+  font-size: 15px;
+  color: white;
+  font-family:cursive;
+}
+.text4{
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  margin-top: 50px;
+}
+.t1{
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 10%;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.t2{
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-top: 3%;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.login{
+  height: 40px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 55px;
+  color: black;
+  background-color: #ababab;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 10px;
+  /* font-weight: 500; */
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  background-clip: padding-box;
+}
+
+.login:hover{
+  background-color: #ff006e;
+  color: white;
+}
+.fa {
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: center;
+  color: #ababab;
+  text-decoration: none;
+  transition: all 0.8s ease;
+}
+
+.fa:hover{
+  color: #ff006e;
+}
+
+.image{
+  margin-left: 15%;
+  /* background-color: brown; */
+  color: white;
+  grid-area: image;
+  padding: 20px;
+}
+.image img{
+  /* margin-top: 30%; */
+  /* margin-left: 15%; */
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px black;
+}
+.cards{
+display: subgrid;
+background-clip: padding-box;
+text-align: center;
+
+}
+
+.card{
+     width: 25%;
+     display: inline-block;
+     background-color: #00000000;
+     text-align: center;
+     padding: 10px;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px;
+     margin: 2% ;
+     cursor: pointer;
+    }
+
+.card:hover{
+  /* box-shadow: 0 0 50px #111; */
+transition: all 0.3s ease;
+-ms-transform: scale(1.1); /* IE 9 */
+-webkit-transform: scale(1.1); /* Safari 3-8 */
+transform: scale(1.1);
+cursor: pointer;
+}
+.card a{
+  text-decoration: none;
+}
+
+.cardImage lottie-player{
+  height: 40%;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.cardImage img{
+  height: 50%;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+ }
+
+.cardTitle{
+  text-align: center;
+  padding: 10px;
+ }
+
+
+h1{
+  font-size: 15px;
+  font-family: Malgun Gothic;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 2px;
+ }
+ .hobby_items{
+   display: flex;
+   justify-content: center;
+ }
+ p{
+   font-size: 22px;
+   font-family: Malgun Gothic;
+   color: white;
+   font-weight: bold;
+   letter-spacing: 2px;
+   /* text-align: center; */
+ }
+ h3{
+   font-size: 22px;
+   font-family: Malgun Gothic;
+   color: white;
+   font-weight: bold;
+   letter-spacing: 2px;
+   text-align: center;
+ }
+
+ /* Create two columns that float next to eachother */
+.column {
+  /* float: left; */
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: sans-serif;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea{
+  font-family: sans-serif;
+}
+
+input[type=submit] {
+  height: 40px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  background-color: #ababab;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 18px;
+  /* font-weight: 500; */
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  background-clip: padding-box;
+}
+
+input[type=submit]:hover {
+  background-color: #ff006e;
+  color: white;
+}
+
+ h3{
+   font-size: 18px;
+   font-family: Malgun Gothic;
+   color: white;
+   font-weight: lighter;
+   letter-spacing: 4px;
+   text-align: center;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+.des{
+  padding: 3px;
+  text-align: center;
+  color: #000;
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+.wrapper{
+        width: 400px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        margin:0 auto;
+    }
+    .skill {
+        margin-bottom: 35px;
+        position: relative;
+      overflow-x:hidden;
+
+    }
+    .skill > p {
+        font-size: 15px;
+        /* font-weight: 700; */
+        font-family: sans-serif;
+        font-weight: lighter;
+        color: white;
+        margin: 0;
+    }
+    .skill:before{
+        width: 100%;
+        height: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: #959595;
+        bottom: 0;
+    }
+    .skill-bar {
+        width: 100%;
+        height: 5px;
+        background:#ff006e;
+        display: block;
+        position: relative;
+    }
+
+    /* SKILL 1 */
+    .skill1{
+        width: 95%;
+
+    }
+    .skill-bar span{
+        position: absolute;
+        border-top: 5px solid #ff006e;
+        top: -27px;
+        padding: 0;
+        font-size: 15px;
+        padding: 3px 0;
+        /* font-weight: 500; */
+    }
+    .skill-bar {
+        position: relative;
+
+    }
+
+    .skill1 .skill-count1 {
+        right: 0;
+    }
+    /* SKILL 2 */
+    .skill2{
+        width: 85%;
+    }
+
+    .skill2 .skill-count2 {
+        right: 0;
+    }
+    /* SKILL 3 */
+    .skill3{
+        width: 75%;
+    }
+    .skill3 .skill-count3 {
+        right: 0;
+    }
+
+    /* SKILL 4 */
+    .skill4{
+        width: 65%
+    }
+
+    .skill4 .skill-count4 {
+        right: 0;
+    }
+
+
+    /* SKILL 5 */
+    .skill5{
+        width: 80%;
+    }
+
+    .skill5 .skill-count5 {
+        right: 0;
+    }
+
+    /* SKILL 6 */
+    .skill6{
+        width: 90%
+    }
+
+    .skill6 .skill-count6 {
+        right: 0;
+    }
+    .skill7{
+        width: 70%
+    }
+
+    .skill7 .skill-count7 {
+        right: 0;
+    }
+    .skill8{
+        width: 50%
+    }
+
+    .skill8 .skill-count8 {
+        right: 0;
+    }
+    .skill9{
+        width:55%
+    }
+
+    .skill9 .skill-count9 {
+        right: 0;
+    }
+/* GITHUB SOURCE STYLE  */
+/* .github-source{
+  float:right;
+  display:block;
+  color:#fff;
+  margin:0 20px;
+  position: relative;
+  z-index:999999;
+  top:0;
+}
+.github-source i{
+  font-size:50px;
+  color:#000
+} */
+
+@media only screen and (max-width: 650px) {
+body{
+  background-image: url(My.png);
+}
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr .8fr .1fr;
+    grid-template-areas:
+    "navbar"
+    "mainContent"
+    "footer";
+  }
+  .mainContent{
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "content";
+  }
+.content{
+  grid-template-columns: 1fr;
+  grid-template-rows:.2fr .1fr .1fr .2fr .1fr .1fr;
+  grid-template-areas:
+  "text"
+  "skills"
+  "tech_skills"
+  "projects"
+  "hobby"
+  "contact_me";
+}
+
+/* .content{
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr .5fr;
+  grid-template-areas:
+  "image"
+  "text";
+} */
+/* .projects{
+  display:inline-block;
+}
+.skills{
+  grid-area: skills;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr .5fr;
+  grid-template-ares:
+  "skill_head"
+  "cards";
+} */
+.cards{
+  grid-area: cards;
+  display: grid;
+  background-color: #00000000;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr .5fr;
+  grid-template-areas:
+  "card"
+  "card";
+}
+/* .skillHead{
+  grid-area: skill_head;
+}
+.card{
+  height: 80%;
+  width: 80%;
+  grid-area: card;
+}*/
+.image{
+  /* color: white;s */
+  grid-area: image;
+  display: none !important;
+  /* padding: 20px; */
+}
+/*
+#appDev{
+  grid-area: app;
+}
+#webDev{
+  grid-area: web;
+} */
+.animation{
+  display: none !important;
+}
+.animation1{
+    display: none !important;
+}
+}

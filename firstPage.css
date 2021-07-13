@@ -3,9 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html{
-  scroll-behavior: smooth;
-}
 
 main{
   height: 100vh;
@@ -26,7 +23,7 @@ main{
   /* background-color: violet; */
   grid-area: navbar;
   color: #fff;
-  font-size: 18px;
+  font-size: 150%;
   font-family: cursive;
   text-align: center;
 }
@@ -47,9 +44,9 @@ main{
   color: white;
   grid-area: footer;
   text-align: center;
-  font-size: 12px;
+  font-size: 80%;
   padding: 10px;
-
+  font-family: cursive;
 }
 .skills{
   /* background-color: pink; */
@@ -88,9 +85,9 @@ main{
   backdrop-filter: blur(8px);
   display: grid;
   align-items: center;
-  grid-gap: 2%;
+  /* grid-gap: 2%; */
   grid-template-rows:  1fr;
-  grid-template-columns:  30% 70%;
+  grid-template-columns: 30% 70%;
   grid-template-areas:
   "image text"
   "internship internship"
@@ -136,27 +133,30 @@ main{
   /* background-color: brown; */
 }
 .text{
-  /* background-color: brown; */
   padding: 15px;
+  width: auto;
   color: white;
   grid-area: text;
-  margin-left: 5%;
+  margin-right: 25%;
+  filter: brightness(100%);
 }
 
 .text1{
-  font-size: 18px;
+  font-size: 150%;
   color: #fff;
+  /* color: #000; */
   margin-bottom: 5px;
 }
 .text2{
   font-size: 75px;
   color: #ff006e;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .skillHead{
   margin: 5%;
   font-size: 22px;
   letter-spacing: 4px;
-  color: white;
+  color:white;
   text-align: center;
 }
 .text5{
@@ -165,29 +165,32 @@ main{
 }
 .text3{
   margin-top: 15px;
-  font-size: 15px;
+  font-size: 130%;
   color: white;
+  /* color: #000; */
   font-family:cursive;
 }
 .text4{
-  font-size: 14px;
+  font-size: 140%;
   color: #fff;
   text-align: left;
   margin-top: 50px;
 }
 .t1{
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 140%;
   margin-top: 10%;
   color: #fff;
+  /* color: #000; */
   letter-spacing: 1px;
   font-weight: lighter;
 }
 .t2{
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 140%;
   margin-top: 3%;
   color: #fff;
+  /* color: #000; */
   letter-spacing: 1px;
   font-weight: lighter;
 }
@@ -215,10 +218,12 @@ main{
   color: white;
 }
 .fa {
+  font-size: 140%;
   margin-right: 10px;
   margin-top: 10px;
   text-align: center;
   color: #ababab;
+  /* color: #000; */
   text-decoration: none;
   transition: all 0.8s ease;
 }
@@ -228,8 +233,8 @@ main{
 }
 
 .image{
-  margin-left: 15%;
-  /* background-color: brown; */
+  /* margin-left: 15%; */
+  /* background-color: blue; */
   color: white;
   grid-area: image;
   padding: 20px;
@@ -237,9 +242,10 @@ main{
 .image img{
   /* margin-top: 30%; */
   /* margin-left: 15%; */
-  width: 300px;
+  width: auto;
   border-radius: 50%;
   box-shadow: 2px 2px 20px black;
+  filter: brightness(20%);
 }
 .cards{
 display: subgrid;
@@ -510,18 +516,63 @@ input[type=submit]:hover {
     .skill9 .skill-count9 {
         right: 0;
     }
-/* GITHUB SOURCE STYLE  */
-/* .github-source{
-  float:right;
-  display:block;
-  color:#fff;
-  margin:0 20px;
-  position: relative;
-  z-index:999999;
-  top:0;
-}
-.github-source i{
-  font-size:50px;
-  color:#000
-} */
 
+@media only screen and (max-width: 550px) {
+  body{
+    background-image: url(My.png);
+  }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: .1fr .8fr .1fr;
+      grid-template-areas:
+      "navbar"
+      "mainContent"
+      "footer";
+    }
+    .mainContent{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+      "content";
+    }
+  .content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:.2fr .2fr .1fr .1fr .2fr .1fr .1fr;
+    grid-template-areas:
+    "image"
+    "text"
+    "skills"
+    "tech_skills"
+    "projects"
+    "hobby"
+    "contact_me";
+  }
+
+  .contactMe{
+    margin-bottom: 0%;
+  }
+  .cards{
+    grid-area: cards;
+    background-color: #00000000;
+    width: 100%;
+    
+  }
+
+  .card{
+    width: 80%;
+    height: 80%;
+    margin: 8px;
+  }
+  .animation{
+    display: none !important;
+  }
+  .animation1{
+      display: none !important;
+  }
+}

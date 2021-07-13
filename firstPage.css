@@ -85,7 +85,6 @@ main{
   backdrop-filter: blur(8px);
   display: grid;
   align-items: center;
-  /* grid-gap: 2%; */
   grid-template-rows:  1fr;
   grid-template-columns: 30% 70%;
   grid-template-areas:
@@ -100,7 +99,7 @@ main{
 
 .internship_items{
   display: block;
-  line-height: 300%;
+  /* line-height: 300%; */
 }
 
 .scroll-container {
@@ -170,12 +169,7 @@ main{
   /* color: #000; */
   font-family:cursive;
 }
-.text4{
-  font-size: 140%;
-  color: #fff;
-  text-align: left;
-  margin-top: 50px;
-}
+
 .t1{
   font-family: sans-serif;
   font-size: 140%;
@@ -217,6 +211,13 @@ main{
   background-color: #ff006e;
   color: white;
 }
+
+.text4{
+  font-size: 140%;
+  color: #fff;
+  text-align: left;
+  margin-top: 50px;
+}
 .fa {
   font-size: 140%;
   margin-right: 10px;
@@ -251,6 +252,7 @@ main{
 display: subgrid;
 background-clip: padding-box;
 text-align: center;
+width: auto;
 
 }
 
@@ -517,9 +519,17 @@ input[type=submit]:hover {
         right: 0;
     }
 
-@media only screen and (max-width: 550px) {
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
   body{
     background-image: url(My.png);
+    /* background-color: lightblue; */
   }
 
     main {
@@ -539,19 +549,90 @@ input[type=submit]:hover {
       grid-template-areas:
       "content";
     }
+
+    .text{
+      /* padding: 15px; */
+      width: 100%;
+      color: white;
+      grid-area: text;
+      /* margin-right: 25%; */
+      filter: brightness(100%);
+    }
+
+    .login{
+      height: 70px;
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 55px;
+      color: black;
+      background-color: #ababab;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 15px;
+      padding: 5px;
+      /* font-weight: 500; */
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.8s ease;
+      background-clip: padding-box;
+    }
+    
+    .login:hover{
+      background-color: #ff006e;
+      color: white;
+    }
+    
+    .text4{
+      font-size: 25px;
+      color: #fff;
+      text-align: left;
+      margin-top: 50px;
+    }
+    .fa {
+      font-size: 500px;
+      margin-right: 10px;
+      margin-top: 10px;
+      text-align: center;
+      color: #ababab;
+      /* color: #000; */
+      text-decoration: none;
+      transition: all 0.8s ease;
+    }
+    
+    .fa:hover{
+      color: #ff006e;
+    }
+
+    .image{
+      height: 500px;
+      width: 500px;
+      color: white;
+      grid-area: image;
+      padding: 20px;
+    }
+    .image img{
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 20px black;
+      filter: brightness(100%);
+    }
   .content{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:.2fr .2fr .1fr .1fr .2fr .1fr .1fr;
+    grid-template-rows:.5fr .5fr .3fr .5fr .5fr .5fr .5fr .5fr;
     grid-template-areas:
     "image"
-    "text"
-    "skills"
-    "tech_skills"
-    "projects"
-    "hobby"
-    "contact_me";
+     "text"
+     "internship"
+     "skills"
+     "tech_skills"
+     "projects"
+     "hobby"
+     "contact_me";
   }
 
   .contactMe{
@@ -561,12 +642,12 @@ input[type=submit]:hover {
     grid-area: cards;
     background-color: #00000000;
     width: 100%;
-    
+    display: grid;
+    margin: 0%;
   }
-
   .card{
-    width: 80%;
-    height: 80%;
+    width: auto;
+    height: auto;
     margin: 8px;
   }
   .animation{

@@ -534,7 +534,7 @@ input[type=submit]:hover {
 
     
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
 
   *{
     margin: 0px;
@@ -548,8 +548,6 @@ input[type=submit]:hover {
   }
 
     main {
-      padding: 0%;
-      margin: 0%;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: .1fr .8fr .1fr;
@@ -569,6 +567,8 @@ input[type=submit]:hover {
     .skillHead{
       text-align: center;
       margin: 0%;
+      margin-bottom: 5%;
+      margin-top: 10%;
       padding: 0%;
       font-size: 22px;
       letter-spacing: 4px;
@@ -636,9 +636,9 @@ input[type=submit]:hover {
     margin: 0%;
     padding: 0%;
   }
-  form{
+  /* form{
     width: 100%;
-  }
+  } */
 
   #firstname{
     width: 100%;
@@ -696,22 +696,48 @@ input[type=submit]:hover {
     }
 
     .image{
-      height: 500px;
-      width: 500px;
+      height: 100%;
+      width: 90%;
       color: white;
       grid-area: image;
       margin-right: 25%;
+      margin-left: 5%;
       /* padding: 20px; */
       /* margin: 0%;
       padding: 0%; */
     }
     .image img{
-      height: 500px;
-      width: 500px;
+      height: 100%;
+      width: 90%;
       margin-right: 25%;
+      margin-left: 5%;
       border-radius: 50%;
       box-shadow: 2px 2px 20px black;
       filter: brightness(100%);
+    }
+    .skills{
+      margin: 0%;
+      padding: 0%;
+    }
+  
+    .contactMe{
+      margin-bottom: 0%;
+      /* width: 100%; */
+    }
+    .cards{
+      grid-area: cards;
+      background-color: #00000000;
+      /* width: 100%; */
+      margin: 0%;
+      padding: 0%;
+    }
+    .card{
+      width: 50%;
+      height: auto;
+      margin-top: 3px;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding: 0%;
     }
   .content{
     width: 100%;
@@ -728,34 +754,7 @@ input[type=submit]:hover {
      "hobby"
      "contact_me";
   }
-  .skills{
-    margin: 0%;
-    padding: 0%;
-  }
 
-  .contactMe{
-    margin-bottom: 0%;
-    /* width: 100%; */
-  }
-  .cards{
-    grid-area: cards;
-    background-color: #00000000;
-    width: 100%;
-    /* display: grid; */
-    /* align-items: center; */
-    display: inline-block;
-    justify-content: center;
-    margin: 0%;
-    padding: 0%;
-  }
-  .card{
-    width: 50%;
-    height: auto;
-    margin-top: 3px;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 0%;
-  }
   .animation{
     display: none !important;
   }

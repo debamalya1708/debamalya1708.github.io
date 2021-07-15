@@ -556,7 +556,7 @@ input[type=submit]:hover {
         .content{
           /* width: 100vw; */
           margin: 0%;
-          padding: 0%;
+          padding: 5%;
           display: grid;
           grid-template-columns: 1fr;
           grid-template-rows:.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
@@ -594,7 +594,7 @@ input[type=submit]:hover {
           /* padding: 15px; */
           /* width: 100vw; */
           margin: 0%;
-          padding: 0%;
+          padding: 3%;
           color: white;
           grid-area: text;
           /* margin-right: 25%; */
@@ -631,14 +631,17 @@ input[type=submit]:hover {
         }
       .internship_items{
         /* width: 100vw; */
+        padding: 5%;
     
       }
       .wrapper{
         /* width: 100vw; */
+        padding: 5%;
     
       }
       .hobby_items{
         /* width: 100vw; */
+        padding: 5%;
     
       }
     
@@ -648,14 +651,7 @@ input[type=submit]:hover {
         margin-top: 6px;
         font-family: sans-serif;
         margin: 0%;
-        padding: 0%;
-      }
-      /* form{
-        width: 100%;
-      } */
-    
-      #firstname{
-        /* width: 100vw; */
+        padding: 5%;
       }
       h3{
         /* width: 100vw; */
@@ -744,6 +740,12 @@ input[type=submit]:hover {
           /* width: 100%; */
           margin: 0%;
           padding: 0%;
+        }
+        .tech_skills{
+          padding: 5%;
+        }
+        .contactMe{
+          padding: 5%;
         }
         .card{
           width: 50%;

@@ -13,12 +13,12 @@ main{
   display: grid;
   grid-template-rows: 5% 90% 5%;
   grid-template-columns: 1fr;
-  /* grid-gap: 2px; */
   grid-template-areas:
   "navbar"
   "mainContent"
   "footer";
 }
+
 .Navbar{
   /* background-color: violet; */
   grid-area: navbar;
@@ -27,6 +27,7 @@ main{
   font-family: cursive;
   text-align: center;
 }
+
 .mainContent{
   grid-area: mainContent;
   scroll-behavior: smooth;
@@ -38,7 +39,6 @@ main{
   "animation content animation1";
 }
 
-
 .footer{
   /* background-color: pink; */
   color: white;
@@ -48,10 +48,10 @@ main{
   padding: 10px;
   font-family: cursive;
 }
+
 .skills{
   /* background-color: pink; */
   grid-area: skills;
-
 }
 
 .projects{
@@ -67,6 +67,7 @@ main{
 .tech_skills{
   grid-area: tech_skills;
 }
+
 .contactMe{
   grid-area:contact_me;
 }
@@ -74,6 +75,7 @@ main{
 .internships{
   grid-area: internship;
 }
+
 .content{
   color: white;
   grid-area: content;
@@ -106,6 +108,7 @@ main{
   overflow: scroll;
   overflow-x: hidden;
 }
+
 .scroll-container::-webkit-scrollbar {
   width: 0px;
 }
@@ -179,6 +182,7 @@ main{
   letter-spacing: 1px;
   font-weight: lighter;
 }
+
 .t2{
   font-family: sans-serif;
   font-size: 140%;
@@ -240,6 +244,7 @@ main{
   grid-area: image;
   padding: 20px;
 }
+
 .image img{
   /* margin-top: 30%; */
   /* margin-left: 15%; */
@@ -248,12 +253,12 @@ main{
   box-shadow: 2px 2px 20px black;
   filter: brightness(20%);
 }
+
 .cards{
 display: subgrid;
 background-clip: padding-box;
 text-align: center;
 width: auto;
-
 }
 
 .card{
@@ -276,6 +281,7 @@ transition: all 0.3s ease;
 transform: scale(1.1);
 cursor: pointer;
 }
+
 .card a{
   text-decoration: none;
 }
@@ -435,7 +441,6 @@ input[type=submit]:hover {
     /* SKILL 1 */
     .skill1{
         width: 95%;
-
     }
     .skill-bar span{
         position: absolute;
@@ -478,7 +483,6 @@ input[type=submit]:hover {
     .skill4 .skill-count4 {
         right: 0;
     }
-
 
     /* SKILL 5 */
     .skill5{
@@ -526,7 +530,11 @@ input[type=submit]:hover {
 
 
 
-@media only screen and (max-width: 620px) {
+
+
+    
+
+@media only screen and (max-width: 1200px) {
 
   *{
     margin: 0px;
@@ -557,9 +565,17 @@ input[type=submit]:hover {
       "content";
     }
 
+    /* .scroll-container{
+      padding: 0%;
+      line-height: 0%;
+      margin: 0%;
+    } */
+
     .text{
       /* padding: 15px; */
       width: 100%;
+      margin: 0%;
+      padding: 0%;
       color: white;
       grid-area: text;
       /* margin-right: 25%; */
@@ -582,6 +598,7 @@ input[type=submit]:hover {
     }
   .skillHead{
     width: 100%;
+    text-align: center;
 
   }
   .internship_items{
@@ -602,10 +619,9 @@ input[type=submit]:hover {
   }
   h3{
     width: 100%;
+    text-align: center;
 
   }
-
-
     .login{
       height: 70px;
       width: 200px;
@@ -658,11 +674,15 @@ input[type=submit]:hover {
       width: 500px;
       color: white;
       grid-area: image;
-      padding: 20px;
+      margin-right: 25%;
+      /* padding: 20px; */
+      /* margin: 0%;
+      padding: 0%; */
     }
     .image img{
       height: 500px;
       width: 500px;
+      margin-right: 25%;
       border-radius: 50%;
       box-shadow: 2px 2px 20px black;
       filter: brightness(100%);
@@ -671,7 +691,7 @@ input[type=submit]:hover {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:.5fr .5fr .3fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-rows:.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
     grid-template-areas:
     "image"
      "text"
@@ -681,6 +701,16 @@ input[type=submit]:hover {
      "projects"
      "hobby"
      "contact_me";
+  }
+  .skills{
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .skillHead{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
   }
 
   .contactMe{
@@ -692,12 +722,17 @@ input[type=submit]:hover {
     background-color: #00000000;
     width: 100%;
     display: grid;
+    align-items: center;
     margin: 0%;
+    padding: 0%;
   }
   .card{
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin: 8px;
+    margin-top: 3px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
   }
   .animation{
     display: none !important;

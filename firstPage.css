@@ -548,6 +548,8 @@ input[type=submit]:hover {
   }
 
     main {
+      padding: 0%;
+      margin: 0%;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: .1fr .8fr .1fr;
@@ -564,12 +566,15 @@ input[type=submit]:hover {
       grid-template-areas:
       "content";
     }
-
-    /* .scroll-container{
-      padding: 0%;
-      line-height: 0%;
+    .skillHead{
+      text-align: center;
       margin: 0%;
-    } */
+      padding: 0%;
+      font-size: 22px;
+      letter-spacing: 4px;
+      color:white;
+      
+    }
 
     .text{
       /* padding: 15px; */
@@ -583,24 +588,33 @@ input[type=submit]:hover {
     }
     .text2{
       width: 100%;
+      margin: 0%;
+      padding: 0%;
+    }
+    .text1{
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
     }
 
     .text3{
       width: 100%;
+      margin: 0%;
+      padding: 0%;
     }
 
     .t1{
       width: 100%;
+      margin: 0%;
+      padding: 0%;
+      /* font-size: 25%; */
     }
     .t2{
       width: 100%;
+      margin: 0%;
+      padding: 0%;
 
     }
-  .skillHead{
-    width: 100%;
-    text-align: center;
-
-  }
   .internship_items{
     width: 100%;
 
@@ -613,9 +627,21 @@ input[type=submit]:hover {
     width: 100%;
 
   }
-  .column{
-    width: 100%;
 
+  .column {
+    /* float: left; */
+    width: auto;
+    margin-top: 6px;
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+  }
+  form{
+    width: 100%;
+  }
+
+  #firstname{
+    width: 100%;
   }
   h3{
     width: 100%;
@@ -647,13 +673,13 @@ input[type=submit]:hover {
       color: white;
     }
     
-    .text4{
+    /* .text4{
       font-size: 25px;
       color: #fff;
       text-align: left;
       margin-top: 50px;
       width: 100%;
-    }
+    } */
     .fa {
       font-size: 500px;
       margin-right: 10px;
@@ -707,22 +733,18 @@ input[type=submit]:hover {
     padding: 0%;
   }
 
-  .skillHead{
-    text-align: center;
-    margin: 0%;
-    padding: 0%;
-  }
-
   .contactMe{
     margin-bottom: 0%;
-    width: 100%;
+    /* width: 100%; */
   }
   .cards{
     grid-area: cards;
     background-color: #00000000;
     width: 100%;
-    display: grid;
-    align-items: center;
+    /* display: grid; */
+    /* align-items: center; */
+    display: inline-block;
+    justify-content: center;
     margin: 0%;
     padding: 0%;
   }

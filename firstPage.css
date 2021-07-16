@@ -836,6 +836,7 @@ input[type=submit]:hover {
       width: 100%;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
       margin-bottom: 5%;
     }
 
@@ -946,12 +947,14 @@ input[type=submit]:hover {
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .Navbar{
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .image{
@@ -1101,6 +1104,7 @@ input[type=submit]:hover {
       margin: 0%;
       padding: 0%;
       margin-bottom: 5%;
+      font-family:cursive;
     }
 
     .t1{
@@ -1210,12 +1214,14 @@ input[type=submit]:hover {
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .Navbar{
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .image{
@@ -1308,7 +1314,7 @@ input[type=submit]:hover {
     main {
       width: auto;
       margin: 0px;
-    padding: 0px;
+      padding: 0px;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: .1fr .8fr .1fr;
@@ -1367,6 +1373,7 @@ input[type=submit]:hover {
       margin: 0%;
       padding: 0%;
       margin-bottom: 5%;
+      font-family:cursive;
     }
 
     .t1{
@@ -1476,12 +1483,14 @@ input[type=submit]:hover {
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .Navbar{
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .image{
@@ -1556,7 +1565,7 @@ input[type=submit]:hover {
 
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
 
   *{
     margin: 0px;
@@ -1631,6 +1640,7 @@ input[type=submit]:hover {
       margin: 0%;
       padding: 0%;
       margin-bottom: 5%;
+      font-family:cursive;
     }
 
     .t1{
@@ -1740,12 +1750,14 @@ input[type=submit]:hover {
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .Navbar{
       width: auto;
       margin: 0%;
       padding: 0%;
+      font-family:cursive;
     }
 
     .image{

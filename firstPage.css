@@ -878,7 +878,7 @@ input[type=submit]:hover {
           /* padding: 15px; */
           width: 10vw;
           margin: 0%;
-          padding: 0%;
+          padding: 5%;
           color: white;
           grid-area: text;
           /* margin-right: 25%; */
@@ -999,7 +999,7 @@ input[type=submit]:hover {
           color: white;
           grid-area: image;
           margin-right: 25%;
-          margin-left: 5%;
+          margin-left: 10%;
           /* padding: 20px; */
           /* margin: 0%;
           padding: 0%; */
@@ -1008,7 +1008,7 @@ input[type=submit]:hover {
           height: 100%;
           width: 90%;
           margin-right: 25%;
-          margin-left: 5%;
+          margin-left: 10%;
           border-radius: 50%;
           box-shadow: 2px 2px 20px black;
           filter: brightness(100%);

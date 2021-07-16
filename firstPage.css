@@ -660,17 +660,17 @@ input[type=submit]:hover {
         }
       .internship_items{
         /* width: 100vw; */
-        padding: 5%;
+        /* padding: 5%; */
     
       }
       .wrapper{
         /* width: 100vw; */
-        padding: 5%;
+        /* padding: 5%; */
     
       }
       .hobby_items{
         /* width: 100vw; */
-        padding: 5%;
+        /* padding: 5%; */
     
       }
     
@@ -680,7 +680,7 @@ input[type=submit]:hover {
         margin-top: 6px;
         font-family: sans-serif;
         margin: 0%;
-        padding: 5%;
+        /* padding: 5%; */
       }
       h3{
         /* width: 100vw; */
@@ -1364,19 +1364,22 @@ input[type=submit]:hover {
 
     }
   .internship_items{
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
     margin: 0%;
       padding: 0%;
 
   }
   .wrapper{
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
     margin: 0%;
       padding: 0%;
 
   }
   .hobby_items{
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
     margin: 0%;
       padding: 0%;
 
@@ -1400,6 +1403,7 @@ input[type=submit]:hover {
   h3{
     width: 100%;
     text-align: center;
+    margin:0% ;
 
   }
     .login{

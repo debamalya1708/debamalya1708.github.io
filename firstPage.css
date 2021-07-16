@@ -536,27 +536,11 @@ input[type=submit]:hover {
       
       body{
         background-image: url(My.png);
-        margin: 0px;
-        padding: 0px;
         /* background-color: lightblue; */
-      }
-
-      .Navbar{
-        margin: 0%;
-        padding: 0%;
-      }
-
-      .footer{
-        margin: 0%;
-        padding: 0%;
       }
     
         main {
-          /* height: 100vh;
-          width: 100vw; */
           display: grid;
-          margin: 0%;
-          padding: 0%;
           grid-template-columns: 1fr;
           grid-template-rows: .1fr .8fr .1fr;
           grid-template-areas:
@@ -564,35 +548,9 @@ input[type=submit]:hover {
           "mainContent"
           "footer";
         }
-
-        .content{
-          /* width: 100%; */
-          margin: 0%;
-          padding-left: 0%;
-          padding-right: 0%;
-          padding-top: 0%;
-          padding-bottom: 0%;
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows:.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
-          grid-template-areas:
-          "image"
-           "text"
-           "internship"
-           "skills"
-           "tech_skills"
-           "projects"
-           "hobby"
-           "contact_me";
-        }
         .mainContent{
-          /* width: 100vw; */
+          width: 100%;
           display: grid;
-          padding-left: 0%;
-          padding-right: 0%;
-          padding-top: 0%;
-          padding-bottom: 0%;
-          margin: 0%;
           grid-template-columns: 1fr;
           grid-template-rows: 1fr;
           grid-template-areas:
@@ -601,10 +559,8 @@ input[type=submit]:hover {
         .skillHead{
           text-align: center;
           margin: 0%;
-          margin-bottom: 0%;
+          margin-bottom: 5%;
           margin-top: 10%;
-          margin-top: 0%;
-          margin-bottom: 0%;
           padding: 0%;
           font-size: 22px;
           letter-spacing: 4px;
@@ -614,7 +570,7 @@ input[type=submit]:hover {
     
         .text{
           /* padding: 15px; */
-          /* width: 100vw; */
+          width: 100%;
           margin: 0%;
           padding: 5%;
           color: white;
@@ -623,64 +579,70 @@ input[type=submit]:hover {
           filter: brightness(100%);
         }
         .text2{
-          /* width: 100vw; */
+          width: 100%;
           margin: 0%;
           padding: 0%;
         }
         .text1{
-          /* width: 100vw; */
+          width: 100%;
           margin: 0%;
-          
           padding: 0%;
         }
     
         .text3{
-          /* width: 100vw; */
+          width: 100%;
           margin: 0%;
           padding: 0%;
-          font-size: 14px;
-          margin-bottom: 20px;
         }
     
         .t1{
-          /* width: 100vw; */
-          /* margin: 0%; */
+          width: 100%;
+          margin: 0%;
           padding: 0%;
-          font-size: 14px;
-          margin: 5%;
           /* font-size: 25%; */
         }
         .t2{
-          /* width: 100vw; */
+          width: 100%;
           margin: 0%;
           padding: 0%;
-          font-size: 14px;
-          margin: 5%;
     
         }
       .internship_items{
-        /* width: 100vw; */
-        /* padding: 5%; */
+        /* width: 100%; */
+        width: auto;
+        margin: 0%;
+          padding: 0%;
     
       }
       .wrapper{
-        /* width: 100vw; */
-        /* padding: 5%; */
+        /* width: 100%; */
+        width: auto;
+        margin: 0%;
+          padding: 0%;
     
       }
       .hobby_items{
-        /* width: 100vw; */
-        /* padding: 5%; */
+        /* width: 100%; */
+        width: auto;
+        margin: 0%;
+          padding: 0%;
     
       }
     
       .column {
         /* float: left; */
-        /* width: auto; */
+        width: auto;
         margin-top: 6px;
         font-family: sans-serif;
         margin: 0%;
-        /* padding: 5%; */
+        padding: 0%;
+      }
+      /* form{
+        width: 100%;
+      } */
+    
+      #firstname{
+        width: 100%;
       }
       h3{
         width: 100%;
@@ -688,14 +650,14 @@ input[type=submit]:hover {
         margin:0% ;
       }
         .login{
-          height: 70px;
-          width: 200px;
+          height: 60px;
+          width: 190px;
           border: none;
           border-radius: 5px;
           text-align: center;
           margin-top: 55px;
           color: black;
-          background-color: #ff006e;
+          background-color: #ababab;
           font-weight: bold;
           font-family: sans-serif;
           font-size: 15px;
@@ -741,10 +703,6 @@ input[type=submit]:hover {
           grid-area: image;
           margin-right: 25%;
           margin-left: 10%;
-          margin-top: 0%;
-          margin-right: 0%;
-          display: flex;
-          justify-content: center;
           /* padding: 20px; */
           /* margin: 0%;
           padding: 0%; */
@@ -753,8 +711,6 @@ input[type=submit]:hover {
           height: 100%;
           width: 90%;
           margin-right: 25%;
-          margin-top: 0%;
-          margin-right: 0%;
           margin-left: 10%;
           border-radius: 50%;
           box-shadow: 2px 2px 20px black;
@@ -776,17 +732,250 @@ input[type=submit]:hover {
           margin: 0%;
           padding: 0%;
         }
-        .tech_skills{
-          padding: 5%;
+        .card{
+          width: 50%;
+          height: auto;
+          margin-top: 3px;
+          margin-left: 0%;
+          margin-right: 0%;
+          padding: 0%;
         }
-        .contactMe{
-          padding: 5%;
+      .content{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
+        grid-template-areas:
+        "image"
+         "text"
+         "internship"
+         "skills"
+         "tech_skills"
+         "projects"
+         "hobby"
+         "contact_me";
+      }
+    
+      .animation{
+        display: none !important;
+      }
+      .animation1{
+          display: none !important;
+      }
+    }
+    
+
+
+
+
+
+    
+
+    
+
+    @media screen and (max-width: 650px) {
+
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      
+      body{
+        background-image: url(My.png);
+        /* background-color: lightblue; */
+      }
+    
+        main {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: .1fr .8fr .1fr;
+          grid-template-areas:
+          "navbar"
+          "mainContent"
+          "footer";
         }
-        .hobbies{
+        .mainContent{
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          grid-template-areas:
+          "content";
+        }
+        .skillHead{
+          text-align: center;
+          margin: 0%;
+          margin-bottom: 5%;
+          margin-top: 10%;
+          padding: 0%;
+          font-size: 22px;
+          letter-spacing: 4px;
+          color:white;
+          
+        }
+    
+        .text{
+          /* padding: 15px; */
+          width: 100%;
+          margin: 0%;
+          padding: 5%;
+          color: white;
+          grid-area: text;
+          /* margin-right: 25%; */
+          filter: brightness(100%);
+        }
+        .text2{
+          width: 100%;
           margin: 0%;
           padding: 0%;
         }
-        .skill_bar{
+        .text1{
+          width: 100%;
+          margin: 0%;
+          padding: 0%;
+        }
+    
+        .text3{
+          width: 100%;
+          margin: 0%;
+          padding: 0%;
+        }
+    
+        .t1{
+          width: 100%;
+          margin: 0%;
+          padding: 0%;
+          /* font-size: 25%; */
+        }
+        .t2{
+          width: 100%;
+          margin: 0%;
+          padding: 0%;
+    
+        }
+      .internship_items{
+        /* width: 100%; */
+        width: auto;
+        margin: 0%;
+          padding: 0%;
+    
+      }
+      .wrapper{
+        /* width: 100%; */
+        width: auto;
+        margin: 0%;
+          padding: 0%;
+    
+      }
+      .hobby_items{
+        /* width: 100%; */
+        width: auto;
+        margin: 0%;
+          padding: 0%;
+    
+      }
+    
+      .column {
+        /* float: left; */
+        width: auto;
+        margin-top: 6px;
+        font-family: sans-serif;
+        margin: 0%;
+        padding: 0%;
+      }
+      /* form{
+        width: 100%;
+      } */
+    
+      #firstname{
+        width: 100%;
+      }
+      h3{
+        width: 100%;
+        text-align: center;
+        margin:0% ;
+      }
+        .login{
+          height: 60px;
+          width: 190px;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          margin-top: 55px;
+          color: black;
+          background-color: #ababab;
+          font-weight: bold;
+          font-family: sans-serif;
+          font-size: 15px;
+          padding: 5px;
+          /* font-weight: 500; */
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.8s ease;
+          background-clip: padding-box;
+        }
+        
+        .login:hover{
+          background-color: #ff006e;
+          color: white;
+        }
+        
+        /* .text4{
+          font-size: 25px;
+          color: #fff;
+          text-align: left;
+          margin-top: 50px;
+          width: 100%;
+        } */
+        .fa {
+          font-size: 500px;
+          margin-right: 10px;
+          margin-top: 10px;
+          text-align: center;
+          color: #ababab;
+          /* color: #000; */
+          text-decoration: none;
+          transition: all 0.8s ease;
+        }
+        
+        .fa:hover{
+          color: #ff006e;
+        }
+    
+        .image{
+          height: 100%;
+          width: 90%;
+          color: white;
+          grid-area: image;
+          margin-right: 25%;
+          margin-left: 10%;
+          /* padding: 20px; */
+          /* margin: 0%;
+          padding: 0%; */
+        }
+        .image img{
+          height: 100%;
+          width: 90%;
+          margin-right: 25%;
+          margin-left: 10%;
+          border-radius: 50%;
+          box-shadow: 2px 2px 20px black;
+          filter: brightness(100%);
+        }
+        .skills{
+          margin: 0%;
+          padding: 0%;
+        }
+      
+        .contactMe{
+          margin-bottom: 0%;
+          /* width: 100%; */
+        }
+        .cards{
+          grid-area: cards;
+          background-color: #00000000;
+          /* width: 100%; */
           margin: 0%;
           padding: 0%;
         }
@@ -798,7 +987,21 @@ input[type=submit]:hover {
           margin-right: 0%;
           padding: 0%;
         }
-
+      .content{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
+        grid-template-areas:
+        "image"
+         "text"
+         "internship"
+         "skills"
+         "tech_skills"
+         "projects"
+         "hobby"
+         "contact_me";
+      }
     
       .animation{
         display: none !important;
@@ -807,243 +1010,7 @@ input[type=submit]:hover {
           display: none !important;
       }
     }
-
-
-
-
-
     
-
-    
-
-@media screen and (max-width: 650px) {
-
-  *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  body{
-    background-image: url(My.png);
-    /* background-color: lightblue; */
-  }
-
-    main {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: .1fr .8fr .1fr;
-      grid-template-areas:
-      "navbar"
-      "mainContent"
-      "footer";
-    }
-    .mainContent{
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas:
-      "content";
-    }
-    .skillHead{
-      text-align: center;
-      margin: 0%;
-      margin-bottom: 5%;
-      margin-top: 10%;
-      padding: 0%;
-      font-size: 22px;
-      letter-spacing: 4px;
-      color:white;
-      
-    }
-
-    .text{
-      /* padding: 15px; */
-      width: 100%;
-      margin: 0%;
-      padding: 5%;
-      color: white;
-      grid-area: text;
-      /* margin-right: 25%; */
-      filter: brightness(100%);
-    }
-    .text2{
-      width: 100%;
-      margin: 0%;
-      padding: 0%;
-    }
-    .text1{
-      width: 100%;
-      margin: 0%;
-      padding: 0%;
-    }
-
-    .text3{
-      width: 100%;
-      margin: 0%;
-      padding: 0%;
-    }
-
-    .t1{
-      width: 100%;
-      margin: 0%;
-      padding: 0%;
-      /* font-size: 25%; */
-    }
-    .t2{
-      width: 100%;
-      margin: 0%;
-      padding: 0%;
-
-    }
-  .internship_items{
-    width: 100%;
-
-  }
-  .wrapper{
-    width: 100%;
-
-  }
-  .hobby_items{
-    width: 100%;
-
-  }
-
-  .column {
-    /* float: left; */
-    width: auto;
-    margin-top: 6px;
-    font-family: sans-serif;
-    margin: 0%;
-    padding: 0%;
-  }
-  /* form{
-    width: 100%;
-  } */
-
-  #firstname{
-    width: 100%;
-  }
-  h3{
-    width: 100%;
-    text-align: center;
-    margin:0% ;
-  }
-    .login{
-      height: 70px;
-      width: 200px;
-      border: none;
-      border-radius: 5px;
-      text-align: center;
-      margin-top: 55px;
-      color: black;
-      background-color: #ababab;
-      font-weight: bold;
-      font-family: sans-serif;
-      font-size: 15px;
-      padding: 5px;
-      /* font-weight: 500; */
-      letter-spacing: 1px;
-      cursor: pointer;
-      transition: all 0.8s ease;
-      background-clip: padding-box;
-    }
-    
-    .login:hover{
-      background-color: #ff006e;
-      color: white;
-    }
-    
-    /* .text4{
-      font-size: 25px;
-      color: #fff;
-      text-align: left;
-      margin-top: 50px;
-      width: 100%;
-    } */
-    .fa {
-      font-size: 500px;
-      margin-right: 10px;
-      margin-top: 10px;
-      text-align: center;
-      color: #ababab;
-      /* color: #000; */
-      text-decoration: none;
-      transition: all 0.8s ease;
-    }
-    
-    .fa:hover{
-      color: #ff006e;
-    }
-
-    .image{
-      height: 100%;
-      width: 90%;
-      color: white;
-      grid-area: image;
-      margin-right: 25%;
-      margin-left: 5%;
-      /* padding: 20px; */
-      /* margin: 0%;
-      padding: 0%; */
-    }
-    .image img{
-      height: 100%;
-      width: 90%;
-      margin-right: 25%;
-      margin-left: 5%;
-      border-radius: 50%;
-      box-shadow: 2px 2px 20px black;
-      filter: brightness(100%);
-    }
-    .skills{
-      margin: 0%;
-      padding: 0%;
-    }
-  
-    .contactMe{
-      margin-bottom: 0%;
-      /* width: 100%; */
-    }
-    .cards{
-      grid-area: cards;
-      background-color: #00000000;
-      /* width: 100%; */
-      margin: 0%;
-      padding: 0%;
-    }
-    .card{
-      width: 50%;
-      height: auto;
-      margin-top: 3px;
-      margin-left: 0%;
-      margin-right: 0%;
-      padding: 0%;
-    }
-  .content{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:.1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
-    grid-template-areas:
-    "image"
-     "text"
-     "internship"
-     "skills"
-     "tech_skills"
-     "projects"
-     "hobby"
-     "contact_me";
-  }
-
-  .animation{
-    display: none !important;
-  }
-  .animation1{
-      display: none !important;
-  }
-}
 
 
 

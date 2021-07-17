@@ -469,7 +469,7 @@ input[type=submit]:hover {
     }
     /* SKILL 3 */
     .skill3{
-        width: 75%;
+        width: 35%;
     }
     .skill3 .skill-count3 {
         right: 0;
@@ -477,7 +477,7 @@ input[type=submit]:hover {
 
     /* SKILL 4 */
     .skill4{
-        width: 65%
+        width: 40%
     }
 
     .skill4 .skill-count4 {

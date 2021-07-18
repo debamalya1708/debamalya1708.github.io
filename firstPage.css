@@ -399,6 +399,7 @@ input[type=submit]:hover {
   letter-spacing: 2px;
   text-align: center;
   margin-left: 10px;
+  font-weight: normal;
   margin-right: 10px;
   margin-top: 15px;
  }
@@ -407,6 +408,8 @@ input[type=submit]:hover {
    text-decoration: none;
    font-weight: bold;
    font-size: 16px;
+   font-size: 18px;
+   
  }
 .des{
   padding: 3px;

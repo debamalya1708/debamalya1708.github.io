@@ -80,6 +80,7 @@ main{
   grid-area: internship;
 }
 
+
 .content{
   color: white;
   grid-area: content;
@@ -251,8 +252,6 @@ main{
 }
 
 .image img{
-  /* margin-top: 30%; */
-  /* margin-left: 15%; */
   width: auto;
   border-radius: 50%;
   box-shadow: 2px 2px 20px black;
@@ -315,7 +314,8 @@ cursor: pointer;
   text-align: center;
   color: #959595;
   font-weight: lighter;
-  margin: 48%;
+  /* margin: 48%; */
+  align-items: center;
 }
 h1{
   font-size: 15px;

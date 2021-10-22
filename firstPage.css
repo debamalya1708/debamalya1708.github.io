@@ -255,7 +255,7 @@ main{
   width: auto;
   border-radius: 50%;
   box-shadow: 2px 2px 20px black;
-  filter: brightness(20%);
+  filter: brightness(40%);
 }
 
 .cards{
@@ -400,6 +400,7 @@ input[type=submit]:hover {
    letter-spacing: 4px;
    text-align: center;
    margin-left: 10px;
+   margin-bottom: 20px;
    margin-right: 10px;
  }
  h2{
@@ -527,14 +528,14 @@ input[type=submit]:hover {
 
     /* SKILL 6 */
     .skill6{
-        width: 90%
+        width: 80%
     }
 
     .skill6 .skill-count6 {
         right: 0;
     }
     .skill7{
-        width: 70%
+        width: 80%
     }
 
     .skill7 .skill-count7 {

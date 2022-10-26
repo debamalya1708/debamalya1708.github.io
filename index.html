@@ -1,328 +1,873 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Dd.png">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
-<link rel="stylesheet" href="firstPage.css">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="contact.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DevFolio - Developer Portfolio Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
 
-    <title>Debamalya Palai</title>
-  </head>
-  <body>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-    
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <main>
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-      <div class="Navbar">
-          Debamalya Palai
-        </div>
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-      <div class="mainContent">
-        <div class="animation1"></div>
-        <div class="content scroll-container">
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><i class="fa fa-code"></i> Debamalya</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-          <div class="image" id="debamalya">
-            <img src="D.jpg">
-        </div>
-
-            <div class="text">
-                <div class="text1" id="text1">Hey! I am</div>
-
-
-                <div class="text2" id="text2">
-
-                </div>
-
-                <script type="text/javascript">
-                  var i=0,text
-
-                  text = "Debamalya Palai..."
-                  function typing(){
-                    if(i<text.length){
-                      document.getElementById("text2").innerHTML += text.charAt(i);
-                      i++;
-                      setTimeout(typing,180);
-                    }
-                  }
-                  typing();
-
-                </script>
-
-                <div class="text3">A young Developer & Designer with crazy for Android & Web Development.</div>
-
-                <div class="t1">
-                  I am a B.Tech Computer Science Engineering student at University of Engineering and Management Kolkata.
-                </div>
-                <div class="t2">
-                  <br>Web Developer | Android Developer | Java Developer | Python Enthusiast
-                </div>
-
-                <div class="button">
-                    <a href="https://drive.google.com/file/d/1cq2gUU5s-v2KxYklqCptQlj_24IdLsZs/view?usp=sharing" target="_blank"><button class="login">MY RESUME</button></a>
-              </div>
-              <div class="text4">Find Me on</div>
-              <a href="https://www.linkedin.com/in/debamalyapalai/" target="_blank" class="fa fa-linkedin fa-2x"></a>
-              <a href="https://github.com/debamalya1708" target="_blank" class="fa fa-github fa-2x"></a>
-              <a href="https://twitter.com/DebamalyaP" target="_blank" class="fa fa-twitter fa-2x"></a>
-                <a href="https://www.facebook.com/dDebaMalyA" target="_blank" class="fa fa-facebook fa-2x"></a>
-                <a href="https://www.instagram.com/debamalyaa/" target="_blank" class="fa fa-instagram fa-2x"></a>
-            </div>
-            
-
-            <div class="internships">
-                <div class="skillHead">EXPERIENCE</div>
-
-                <div class="internship_items">
-                  <h3>•Internship : Full Stack Software Developer Intern at GrabDoc</h3>
-                  <h3>•Android Developer at Applex.in</h3>
-                </div>
-
-              </div>
-
-            <div class="skills">
-                <div class="skillHead">WHAT I DO</div>
-                <!-- <div class="card"> -->
-
-                <div class="cards">
-
-                  <div class="card" id="webDev">
-                  <div class="cardImage">
-                  <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hntzYU.json"
-                   background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player>
-                  </div>
-                  <div class="cardTitle">
-                  <h1>
-                  Full Stack Development</h1>
-                  </div>
-                  </div>
-
-                  <div class="card" id="appDev">
-                    <div class="cardImage">
-                      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_fztluxdp.json"
-                      background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#service" class="nav-item nav-link">Service</a>
+                        <a href="#education" class="nav-item nav-link">Education</a>
+                        <a href="#skill" class="nav-item nav-link">Skill</a>
+                        <a href="#experience" class="nav-item nav-link">Experience</a>
+                        <a href="#projects" class="nav-item nav-link">Projects</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
-                    <div class="cardTitle">
-                    <h1>
-                    Mobile App Development</h1>
-                    </div>
-                    </div>
-
-                    <div class="card" id="appDev">
-                      <div class="cardImage">
-                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_w0jj5msg.json" 
-                         background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player>
-                      </div>
-                      <div class="cardTitle">
-                      <h1>
-                      Graphic Design</h1>
-                      </div>
-                      </div>
                 </div>
-
-            </div>
-
-            <div class="tech_skills">
-              <div class="skillHead">TECHNICAL SKILLS</div>
-
-              <div class="skill_bar">
-
-<div class="wrapper">
-        <!-- <div class="skill">
-            <p>HTML5</p>
-            <div class="skill-bar skill1 wow slideInLeft animated">
-                <span class="skill-count1">95%</span>
             </div>
         </div>
-        <div class="skill">
-            <p>CSS3</p>
-            <div class="skill-bar skill2 wow slideInLeft animated">
-                 <span class="skill-count2">85%</span>
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>I'm</p>
+                                <h1>Debamalya Palai</h1>
+                                <p>Junior Engineer at Cornertone OnDemand</p>
+                                <h2></h2>
+                                <div class="typed-text">Full Stack Web Developer, Back End Developer, Apps Developer</div>
+                               
+                            </div>
+                            <div class="hero-btn">
+                                <a class="btn" href="#contact">Hire Me</a>
+                                <a class="btn" href="">My Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <!-- <img src="img/dp.png" alt="Hero Image"> -->
+                            <lottie-player src="https://lottie.host/d463634c-5427-43ef-bb3a-1dd921ac47f8/uaGIZx7bq3.json" 
+                             background="transparent"  speed="1"  style="width: 650px; height: 650px;"  loop  autoplay></lottie-player>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="img/dp.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>Learn About Me</p>
+                                <!-- <h2>Computer science Engineer</h2> -->
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    I am a <strong>B.Tech Computer Science Engineering</strong> student at University of Engineering and Management Kolkata, A young Developer & Designer with crazy for <strong>Full Stack Web & App Development</strong>.
+                                </p>
+
+                                <br>
+
+                                <p>
+                                I am a <strong>Developer</strong> with an effective mindset of learning and implementing modern technologies.
+                            </p>
+                            <p>
+                            My domain of expertise is mainly in the field of <strong>Fullstack Web and Android App Development</strong>. I've worked with software, including databases like SQL. I have a strong passion for building application that is user-friendly and easy to use.
+                        </p>
+
+                        <p>Beside development, I'm a <strong>Competitive Programmer</strong> with strong DSA knowledge.</p>
+                        
+                        
+                         </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        <!-- Service Start -->
+        <div class="service" id="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Development Services</p>
+                    <h2>What I do</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Full Stack Web Development</h3>
+                                <p>
+                                    Web Applications developmenet using Java, Springboot, Spring MVC, Rest API, MySql, PostgreSql, Python, Flask, Html, Css, Javascript.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Full Stack Mobile App Development</h3>
+                                <p>
+                                    Mobile Applications developmenet using Java, Springboot, Spring MVC, Rest API, MySql, PostgreSql, Android, XML.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Backend Development</h3>
+                                <p>
+                                    Backend developmenet using Java, Springboot, Spring MVC, Rest API, MySql, PostgreSql, Python, Flask.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Apps Design</h3>
+                                <p>
+                                    Mobile Apps design using XML, FLutter.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+
+
+                 <!-- Education Start -->
+                 <div class="experience" id="education">
+                    <div class="container">
+                        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                            <p>Resume</p>
+                            <h2>My Education</h2>
+                        </header>
+                        <div class="timeline">
+                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                                <div class="timeline-text">
+                                    <div class="timeline-date">2019-2023</div>
+                                    <h2>B.Tech</h2>
+                                    <h4>University of engineering and management Kolkata</h4>
+                                    <p>
+                                        Parsuing Final year of B.Tech in Computer science engineering,SGPA - 9.30
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                                <div class="timeline-text">
+                                    <div class="timeline-date">2017-2019</div>
+                                    <h2>Higher secondary</h2>
+                                    <h4>Kola Union High School</h4>
+                                    <p>
+                                        Completed Class 12 under W.B.C.H.S.E with 76.67%.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                                <div class="timeline-text">
+                                    <div class="timeline-date">2011-2017</div>
+                                    <h2>Class 10</h2>
+                                    <h4>K.T.P.P High School</h4>
+                                    <p>
+                                        Completed Class 10 under W.B.B.S.E with 82.44%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education End -->
+
+
+                <!-- Skill Start -->
+
+                    <div class="container" id="skill">
+                            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                                <p>MY SKILLS</p>
+                                <h2>Language & Frameworks</h2>
+                            </header>
+
+                            <div class="row">
+                                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+
+                                    <div class="skills">
+                                        <div class="skill-name">
+                                            <p>Java</p><p>90%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Python</p><p>80%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Springboot</p><p>75%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Sql</p><p>70%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>APIs</p><p>80%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Html</p><p>90%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Css</p><p>90%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Javascript</p><p>75%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Bootstrap</p><p>90%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-name">
+                                            <p>Git</p><p>90%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 wow fadeInUp pb-3" data-wow-delay="0.6s">
+                                    <span class="Sphere"></span>
+
+
+                                </div>
+
+
+                            </div>
+                
+
+                        </div>
+                    </div>
+<!-- Skill End -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'Html', 'Css', 'Javascript',
+            'Springboot', 'APIs', 'Java',
+            'Python', 'Git','HTMX','J2EE','Spring MVC','JUnit','Mockito','MySql','PostgreSql','Github','Postman'
+            ,'Heroku','Maven',
+            'MySql', 'Jquery', 'Bootstrap', 'C++','XML','Android'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 300,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'normal',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 135,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#EF233C ';
+        document.querySelector('.Sphere').style.color = color;
+    </script>
+
+
+
+
+        
+        
+         <!-- Experience Start -->
+        <div class="experience" id="experience">
+            <div class="container">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Experience</p>
+                    <h2>Working Experience</h2>
+                </header>
+                <div class="timeline">
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">Oct,2022 - Present</div>
+                            <h2>Junior Engineer Intern</h2>
+                            <h4>Cornerstone OnDemand</h4>
+                            <!-- <p>
+                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            </p> -->
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">oct,2021 - mar,2022</div>
+                            <h2>FullStack Software Developer Intern</h2>
+                            <h4>GrabDoc</h4>
+                            <p>
+                                <strong>=></strong> Developed GrabDoc Admin web application using Spring, Hibernate, Thymeleaf, Htmx, architectured in
+                                MVC. Doctor details fetched from NPI API. Listed Doctors list, Patients list also with appointment history.<br />
+                                <strong>=></strong> GrabDoc Secretary WebApp Development using Spring MVC, Hibernate, Thymeleaf, Htmx.<br />
+                                <strong>=></strong> Appointment accept, appointmnet cancel featured added in this webApp.<br />
+                                <strong>=></strong> GrabDoc backend unit testing using JUnit, Mockito. Unit tested backend code of GrabDoc and achieved
+                                code coverage of 94%.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2019 - 2020</div>
+                            <h2>Android App Developer</h2>
+                            <h4>Applex.in</h4>
+                            <p>
+                                <strong>=></strong> SnapLingo - Developed a scalable frontend using Java, XML.<br />
+                                <strong>=></strong> Display all documents in Grid Layout using Recyclerview
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Job Experience End -->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="projects">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>PROJECTS</p>
+                    <h2>My Projects</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-1">Web Apps</li>
+                            <li data-filter=".filter-2">Mobile Apps</li>
+                            <li data-filter=".filter-3">Backend Dev</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Anonymous Video WebApp</h3>
+                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio"> <i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Giftsgasm</h3>
+                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio"> <i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Contact Book</h3>
+                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio"> <i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Facial Expression Detection</h3>
+                                <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio"> <i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/ecommerce1.png" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>ecommerce Website</h3>
+                                <a class="btn" href="img/ecommerce1.png" data-lightbox="portfolio"> <i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>MI Bill App</h3>
+                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio"> <i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>SanpLingo</h3>
+                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio"> <i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+        
+        
+        <!-- Banner Start -->
+        <!-- <div class="banner wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Awesome Discount</p>
+                    <h2>Get <span>30%</span> Discount</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                    </p>
+                    <a class="btn">Order Now</a>
+                </div>
             </div>
         </div> -->
-        <div class="skill">
-          <p>JAVA</p>
-          <div class="skill-bar skill6 wow slideInLeft animated">
-              <span class="skill-count6">80%</span>
-          </div>
-      </div>
-      <div class="skill">
-        <p>JAVASCRIPT</p>
-        <div class="skill-bar skill4 wow slideInLeft animated">
-            <span class="skill-count4">40%</span>
-        </div>
-    </div>
-    <div class="skill">
-      <p>SPRINGBOOT</p>
-      <div class="skill-bar skill8 wow slideInLeft animated">
-          <span class="skill-count8">50%</span>
-      </div>
-  </div>
-        <div class="skill">
-            <p>JQUERY</p>
-            <div class="skill-bar skill3 wow slideInLeft animated">
-                <span class="skill-count3">35%</span>
-            </div>
-        </div>
-
-        <div class="skill">
-            <p>PYTHON</p>
-            <div class="skill-bar skill5 wow slideInLeft animated">
-                <span class="skill-count5">80%</span>
-            </div>
-        </div>
-
-        <div class="skill">
-            <p>BOOTSTRAP5</p>
-            <div class="skill-bar skill7 wow slideInLeft animated">
-                <span class="skill-count7">80%</span>
-            </div>
-        </div>
-        <div class="skill">
-            <p>MYSQL</p>
-            <div class="skill-bar skill9 wow slideInLeft animated">
-                <span class="skill-count9">55%</span>
-            </div>
-        </div>
-    </div>
-
-              </div>
-
-            </div>
-
-
-            <div class="projects">
-                <div class="skillHead">MY PROJECTS</div>
-                <!-- <div class="card"> -->
-
-                <div class="cards">
-
-                  <div class="card">
-                    <a href="https://drive.google.com/file/d/13S5G93XzBq0bzPidNfIRaJSG0LNYoUdb/view?usp=sharing">
-                  <div class="cardImage">
-                  <img src="film.png">
-                  <!-- <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hntzYU.json"
-                   background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player> -->
-                  </div>
-                  <div class="cardTitle">
-                  <h1>
-                  Web App : Cinema World</h1>
-                  </div>
-                </a>
-                  </div>
-
-
-                  <div class="card">
-                    <a href="https://play.google.com/store/apps/details?id=com.ds.giftgasm">
-                  <div class="cardImage">
-                    <img src="giftsgasm.png">
-                    <!-- <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_fztluxdp.json"
-                    background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player> -->
-                  </div>
-                  <div class="cardTitle">
-                  <h1>
-                  Android App : Giftsgasm</h1>
-                  </div>
-                  </a>
-                  </div>
-
-                  <div class="card">
-                  <div class="cardImage">
-                  <img src="employee.png">
-                  <!-- <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hntzYU.json"
-                   background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player> -->
-                  </div>
-                  <div class="cardTitle">
-                  <h1>
-                  Web App : E-M Solution</h1>
-                  </div>
-                  </div>
-
-                  <div class="card">
-                  <div class="cardImage">
-                    <img src="todo.png">
-                    <!-- <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_fztluxdp.json"
-                    background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player> -->
-                  </div>
-                  <div class="cardTitle">
-                  <h1>
-                  Android App : Your ToDo</h1>
-                  </div>
-                  </div>
-
-
-                  <!-- <div class="cards"> -->
-                  <div class="card">
-                    <a href="https://play.google.com/store/apps/details?id=com.applex.snaplingo">
-                  <div class="cardImage">
-                  <img src="snap.png">
-                  <!-- <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hntzYU.json"
-                   background="transparent"  speed="1"  style="width: 100%; height: 40%;"  loop  autoplay></lottie-player> -->
-                  </div>
-                  <div class="cardTitle">
-                  <h1>
-                  Android App : SnapLingo</h1>
-                  </div>
-                </a>
-                  </div>
-
-
+        <!-- Banner End -->
+        
+        
+        <!-- Price Start -->
+        <div class="price" id="contact">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Connect with me!</p>
+                    <h2>I'd love to hear from you.</h2>
                 </div>
+                <div class="row">
+                    <div class="col-md-2 wow fadeInUp" data-wow-delay="0.5s">
+                    </div>
+                    <div class="col-md-8 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>EMAIL</h2>
+                                </div>
+                                <!-- <div class="price-prices">
+                                    <h2><small>$</small>99<span>/ mo</span></h2>
+                                </div> -->
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <i class="fa fa-envelope"></i><li>debamalyapaloi2001@gmail.com</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="mailto:debamalyapaloi2001@gmail.com">Let's Chat</a>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="hobbies">
-                <div class="skillHead">MY HOBBIES</div>
-
-                <div class="hobby_items">
-                  <h3>•Photography</h3>
-                  <h3>•Singing</h3>
-                  <h3>•Paintings</h3>
+        </div>
+        <!-- Price End -->
+        
+        
+        <!-- Testimonial Start -->
+        <!-- <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+            <div class="container">
+                <div class="testimonial-icon">
+                    <i class="fa fa-quote-left"></i>
                 </div>
-
-              </div>
-
-              <div class="contactMe">
-                  <div class="skillHead">CONTACT</div>
-
-                  <h3>Hello friend, I'd love to hear from you.</h3>
-                  <div class="column">
-                        <form>
-                          <label for="fname">Your Name</label>
-                          <input type="text" id="firstname" name="firstname" placeholder="Please Enter Your name" required>
-                          <label for="lname">Email ID</label>
-                          <input type="text" id="email_id" name="email_id" placeholder="Please Enter Your email" required>
-                          <label for="subject">Subject</label>
-                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
-                          <input type="submit" value="Submit">
-                        </form>
-
-                        <h2>OR <br>  Simply Email me at <a href="mailto:debamalyapaloi2001@gmail.com" class="fa fa-envelope fa"> debamalyapaloi2001@gmail.com</a></h2>
-
-                      <a href="#debamalya" id="top" class="fa fa-chevron-circle-up" style="font-size:30px;color:greenyellow"></a>
-                      </div>
-
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
 
 
+        <!-- Team Start -->
+        <!-- <div class="team" id="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Team</p>
+                    <h2>Expert Team Members</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Mollie Ross</h2>
+                                <h4>Web Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Dylan Adams</h2>
+                                <h4>Web Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Jennifer Page</h2>
+                                <h4>Apps Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Josh Dunn</h2>
+                                <h4>Apps Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+        
+        
+        <!-- Contact Start -->
+        <!-- <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Contact End -->
 
-      </div>
 
-        <div class="animation"></div>
+        <!-- Blog Start -->
+        <!-- <div class="blog" id="blog">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>From Blog</p>
+                    <h2>Latest Articles</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="img/blog-1.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>Admin</p>
+                                    <p><i class="far fa-list-alt"></i>Web Design</p>
+                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-comments"></i>5</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="blog-img">
+                                <img src="img/blog-2.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>Admin</p>
+                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
+                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-comments"></i>10</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Blog End -->
 
-      </div>
 
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Debamalya Palai</h2>
+                        <h3>Sahapur, Kolaghat, Purba Medinipur, West Bengal, India, 721134</h3>
+                        <div class="footer-menu">
+                            <p>+91-8906938862</p>
+                            <p>debamalyapaloi2001.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p>&copy; <a href="#">debamalya</a>, All Right Reserved | Designed By Debamalya Palai</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
 
-      <div class="footer">Design & Developed By Debamalya Palai</div>
-    </main>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
 
-  </body>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>

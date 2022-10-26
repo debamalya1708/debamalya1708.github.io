@@ -228,7 +228,17 @@ a:focus {
     .navbar .navbar-nav {
         margin-top: 15px;
     }
-    
+    #skillDiv{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #sphere{
+        display: none;
+    }
+    /* .tagcloud{
+        height: 10px;
+        width: 10px;
+    } */
     .navbar a.nav-link {
         padding: 5px;
     }
